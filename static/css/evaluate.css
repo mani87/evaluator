@@ -4,7 +4,7 @@ body{
 	font-family: 'PT Sans', sans-serif;
 font-family: 'Oxygen', sans-serif;
 font-family: 'Comfortaa', cursive;
-background-color: #0097A7;
+background-color: #03A9F4;
 }
 
 .marks{
@@ -13,4 +13,5 @@ background-color: #0097A7;
 	padding: 1rem;
 	width: 40%;
 	display: inline-block;
+
 }
