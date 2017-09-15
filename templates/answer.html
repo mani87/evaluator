@@ -32,7 +32,7 @@
     {{ formset.management_form }}
 
     {% for form in formset %}
-    <div class="product{% if forloop.counter is 1 %} active{% endif %}" product-id="{{forloop.counter}}"" product-color="#FFCA28">
+    <div class="product{% if forloop.counter is 1 %} active{% endif %}" product-id="{{forloop.counter}}" product-color="{{forloop.counter|get_color}}">
       <h1 class="title">Question {{forloop.counter}}</h1>
       <b>{{questions|get_question:forloop.counter}}</b>
       <hr/>
@@ -88,7 +88,7 @@
 
   </div-->
 
-  <div class="footer"><a class="btn" id="prev" href="#" ripple="" ripple-color="#666666">Prev</a><a class="btn" id="next" href="#" ripple="" ripple-color="#666666">Next</a></div>
+  <div class="footer" style="float: right;"><a class="btn" id="next" href="#" ripple="" ripple-color="#666666">Next</a></div>
 </div>
 
 <center>
