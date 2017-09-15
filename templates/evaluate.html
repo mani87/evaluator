@@ -4,8 +4,16 @@
 	<title>eValuate</title>
 </head>
 <body>
+<hr/>
+<h2>Marks Obtained: {{marks_obtained}}/{{total_marks}}</h2>
+<hr/>
 
-<b>Similarity</b>: {{similarity}}<br/>
-<b>Marks</b>: {{marks}}
+{% for answer in answers %}
+<b>Question: {{forloop.counter}}</b><br/>{{answer.question.statement}}<br/><br/>
+<b>Your answer: </b><br/> {{answer.your_response}}<br/>
+<b>Max. Marks: </b> {{answer.question.marks}}<br/>
+<b>Marks obtained: </b> {{answer.marks_awarded}}<br/>
+<hr/>
+{% endfor %}
 </body>
 </html>
